@@ -1,0 +1,2 @@
+SERIAL_ID,NAME,NUM1,NUM2,TYPE,SCRIPTLET,SCRIPTLET_LINK,CODE_LINK,REFERENCED_PARAMS,CLASS,PLUGIN
+3,CONTROLS_LASTBUILD,9.5,7,DynamicReferenceParameter,--,--,http://localhost:8080/job/UTIL_CONFIG_PARSER/91/artifact/parameter_3_CONTROLS_LASTBUILD_script.txt/*view*/,DATA_RUN,org.biouno.unochoice.DynamicReferenceParameter,[uno-choice@1.3]

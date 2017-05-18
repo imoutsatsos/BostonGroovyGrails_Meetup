@@ -1,0 +1,9 @@
+SERIAL_ID,NAME,TYPE,SCRIPTLET,SCRIPTLET_LINK,CODE_LINK,REFERENCED_PARAMS,CLASS,PLUGIN
+1,WHAT_IS_THIS,StringParameterDefinition,--,--,--,null,null,null
+2,DATA_RUN,ChoiceParameter,UC_helper_GetCompatibleInputRun.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_helper_GetCompatibleInputRun.groovy,--,null,org.biouno.unochoice.ChoiceParameter,[uno-choice@1.5.3]
+3,DATA_SET,CascadeChoiceParameter,UC_helper_findCompatibleInputSetByParam.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_helper_findCompatibleInputSetByParam.groovy,--,DATA_RUN,org.biouno.unochoice.CascadeChoiceParameter,[uno-choice@1.5.3]
+4,DATA_URL,DynamicReferenceParameter,UC_helper_getDataSetUrl.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_helper_getDataSetUrl.groovy,--,DATA_SET,org.biouno.unochoice.DynamicReferenceParameter,[uno-choice@1.5.3]
+5,SHOW_RELATED,BooleanParameterDefinition,--,--,--,null,null,null
+6,UNNAMED_6,DynamicReferenceParameter,UC_RefHelper_findBuildsWhereParam.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_RefHelper_findBuildsWhereParam.groovy,--,DATA_SET:SHOW_RELATED,org.biouno.unochoice.DynamicReferenceParameter,[uno-choice@1.5.3]
+7,READOUTS,CascadeChoiceParameter,UC_helper_getPropertyFromDataUrl.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_helper_getPropertyFromDataUrl.groovy,--,DATA_URL:DATA_SET,org.biouno.unochoice.CascadeChoiceParameter,[uno-choice@1.5.3]
+8,BUILD_LABEL,DynamicReferenceParameter,UC_RefHelper_getSimpleBuildLabel.groovy,http://nrusca-sd189.nibr.novartis.net:8080/scriptler/runScript?id=UC_RefHelper_getSimpleBuildLabel.groovy,--,DATA_SET,org.biouno.unochoice.DynamicReferenceParameter,[uno-choice@1.5.3]
