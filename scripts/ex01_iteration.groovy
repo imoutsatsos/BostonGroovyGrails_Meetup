@@ -11,4 +11,4 @@ Iteration examples with each and eachWithIndex
 
 //range iteration
 (1..<3).each {println "Range Item: $it"  }
-(1..3).eachWithIndex {it,ind->println "Range Item ($ind): $it"}???????????
+(1..3).eachWithIndex {it,ind->println "Range Item ($ind): $it"}
