@@ -11,7 +11,7 @@ author: IKM
  note you may need to adjust your groovy proxy setttings
  */
 def modules=[] //and empty list to hold the imaging module names 
-def u='https://raw.githubusercontent.com/imoutsatsos/BostonGroovyGrails_Meetup/master/testFiles/CP_pipeline_val.cp'
+def u='https://raw.githubusercontent.com/imoutsatsos/BostonGroovyGrails_Meetup/master/testFiles/CP_pipeline_val.cpipe'
 def lines=new URL(u).readLines()
 
 def moduleLines= lines.findIndexValues{it.contains('module_num')}
